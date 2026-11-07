@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calzado — LUXURY STORE</title>
+  <meta name="description" content="Colección de calzado LUXURY STORE: zapatillas, botines y mocasines de piel, seda y lino.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- ================= Símbolos ================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="logo-mark" viewBox="0 0 52 52">
+        <circle cx="26" cy="26" r="24.4" fill="none" stroke="currentColor" stroke-width=".9"/>
+        <circle cx="26" cy="26" r="20.8" fill="none" stroke="currentColor" stroke-width=".45" opacity=".65"/>
+        <path d="M26 1.6v4M26 46.4v4M1.6 26h4M46.4 26h4" stroke="currentColor" stroke-width=".9"/>
+        <text x="26" y="32.2" text-anchor="middle" font-family="Bodoni MT, Didot, Georgia, serif" font-size="17" letter-spacing="1.4" fill="currentColor">LS</text>
+      </symbol>
+      <symbol id="watch" viewBox="0 0 200 200">
+        <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M76 18h48l5 36H71z" fill="currentColor" fill-opacity=".09"/>
+          <path d="M71 146h53l5 36H76z" fill="currentColor" fill-opacity=".09"/>
+          <path d="M79 26h42M77 36h46M74 46h52M77 154h46M74 164h52M79 174h42"/>
+          <circle cx="100" cy="100" r="48" fill="currentColor" fill-opacity=".06"/>
+          <circle cx="100" cy="100" r="38"/>
+          <circle cx="100" cy="100" r="32" opacity=".55"/>
+          <path d="M100 74v26l16 10"/>
+          <path d="M100 62v5M138 100h-5M100 138v-5M62 100h5"/>
+          <path d="M148 93h7v14h-7z"/>
+          <path d="M151 93v14"/>
+        </g>
+      </symbol>
+      <symbol id="sneaker" viewBox="0 0 200 140">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 96c-6 9-3 19 11 19h134c13 0 19-9 15-19l-4-10H24z" fill="currentColor" fill-opacity=".10"/>
+          <path d="M24 86c4-20 18-32 40-33l18-1c14-1 22 4 32 12l35 25c5 4 9 6 15 7l16 2"/>
+          <path d="M64 53l10 14M78 50l10 14M92 49l10 14"/>
+          <path d="M142 55c8 4 15 10 23 18"/>
+          <path d="M30 78c-4-14 2-25 12-31"/>
+        </g>
+      </symbol>
+      <symbol id="boot" viewBox="0 0 200 200">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M68 26h46v78l28 16c8 5 10 14 8 24H46c-8 0-12-8-8-16l16-34V26z" fill="currentColor" fill-opacity=".10"/>
+          <path d="M68 96h46M46 136h104M68 26h46"/>
+          <path d="M84 40v40M98 40v30"/>
+        </g>
+      </symbol>
+      <symbol id="bag" viewBox="0 0 200 200">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="52" y="72" width="96" height="88" rx="3" fill="currentColor" fill-opacity=".09"/>
+          <path d="M78 72V58a22 22 0 0144 0v14"/>
+          <path d="M52 96h96M64 72l6 24M136 72l-6 24"/>
+        </g>
+      </symbol>
+
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/>
+        </g>
+      </symbol>
+      <symbol id="i-user" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/>
+        </g>
+      </symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 8h12l1 13H5L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/>
+        </g>
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M3 7h18M3 12h18M3 17h18"/>
+        </g>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 12h15"/><path d="M13 6l6 6-6 6"/>
+        </g>
+      </symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 6h12v10H2z"/><path d="M14 9h4l3 3v4h-7z"/>
+          <circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/>
+        </g>
+      </symbol>
+      <symbol id="i-return" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 8h11a5 5 0 010 10H9"/><path d="M7 4L3 8l4 4"/>
+        </g>
+      </symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 018 0v3"/>
+        </g>
+      </symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M4 6h16M7 12h10M10 18h4"/>
+        </g>
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M6 6l12 12M18 6L6 18"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">Envío asegurado y gratuito &nbsp;·&nbsp; Devoluciones en 30 días</div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="index.html" aria-label="Luxury Store, inicio">
+        <svg class="logo__mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="logo__word"><b>Luxury</b><small>Store</small></span>
+      </a>
+      <nav class="nav__menu" aria-label="Principal">
+        <a href="catalogo.html">Relojes</a>
+        <a href="catalogo.html">Ropa</a>
+        <a href="catalogo.html" aria-current="page">Calzado</a>
+        <a href="catalogo.html">Accesorios</a>
+        <a href="catalogo.html">Maison</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" aria-label="Buscar">
+          <svg width="20" height="20"><use href="#i-search"/></svg>
+        </button>
+        <a class="icon-btn" href="#" aria-label="Mi cuenta">
+          <svg width="20" height="20"><use href="#i-user"/></svg>
+        </a>
+        <a class="icon-btn" href="checkout.html" aria-label="Bolsa de compra, 2 artículos">
+          <svg width="20" height="20"><use href="#i-bag"/></svg>
+          <span class="cart-count">2</span>
+        </a>
+        <button class="icon-btn icon-btn--menu" aria-label="Abrir menú">
+          <svg width="22" height="22"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Migas de pan">
+      <a href="index.html">Inicio</a>
+      <span>/</span>
+      <span>Colección</span>
+    </nav>
+
+    <div class="page-head">
+      <div>
+        <h1>Colección</h1>
+        <p class="page-head__meta">36 piezas · Otoño 2026</p>
+      </div>
+      <label>
+        <span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Ordenar por</span>
+        <select class="select">
+          <option>Ordenar por: Destacados</option>
+          <option>Precio: de menor a mayor</option>
+          <option>Precio: de mayor a menor</option>
+          <option>Novedades</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="catalog">
+      <!-- ================= Filtros ================= -->
+      <aside class="filters" aria-label="Filtros">
+        <div class="filters__head">
+          <strong>Filtros</strong>
+          <button type="button">Limpiar</button>
+        </div>
+
+        <details class="filter" open>
+          <summary>Categoría</summary>
+          <div class="filter__body">
+            <label class="check"><span><input type="checkbox"> Relojes</span><small>12</small></label>
+            <label class="check"><span><input type="checkbox"> Ropa</span><small>10</small></label>
+            <label class="check"><span><input type="checkbox"> Calzado</span><small>8</small></label>
+            <label class="check"><span><input type="checkbox"> Accesorios</span><small>6</small></label>
+          </div>
+        </details>
+
+        <details class="filter" open>
+          <summary>Talla (UE)</summary>
+          <div class="filter__body">
+            <div class="chips">
+              <button class="chip" type="button">36</button>
+              <button class="chip" type="button">37</button>
+              <button class="chip" type="button">38</button>
+              <button class="chip is-active" type="button">39</button>
+              <button class="chip" type="button">40</button>
+              <button class="chip" type="button">41</button>
+              <button class="chip" type="button">42</button>
+              <button class="chip" type="button">43</button>
+              <button class="chip" type="button">44</button>
+              <button class="chip" type="button" disabled>45</button>
+            </div>
+          </div>
+        </details>
+
+        <details class="filter" open>
+          <summary>Color</summary>
+          <div class="filter__body">
+            <label class="swatch-row">
+              <span><i class="swatch-dot swatch-dot--sand"></i> Oro</span>
+              <input type="checkbox" checked aria-label="Oro">
+            </label>
+            <label class="swatch-row">
+              <span><i class="swatch-dot swatch-dot--black"></i> Ébano</span>
+              <input type="checkbox" aria-label="Ébano">
+            </label>
+            <label class="swatch-row">
+              <span><i class="swatch-dot swatch-dot--white"></i> Marfil</span>
+              <input type="checkbox" aria-label="Marfil">
+            </label>
+            <label class="swatch-row">
+              <span><i class="swatch-dot swatch-dot--olive"></i> Coñac</span>
+              <input type="checkbox" aria-label="Coñac">
+            </label>
+          </div>
+        </details>
+
+        <details class="filter" open>
+          <summary>Precio</summary>
+          <div class="filter__body">
+            <div class="price-inputs">
+              <input type="number" placeholder="0 €" aria-label="Precio mínimo">
+              <span>—</span>
+              <input type="number" placeholder="7.000 €" aria-label="Precio máximo">
+            </div>
+          </div>
+        </details>
+
+        <details class="filter">
+          <summary>Material</summary>
+          <div class="filter__body">
+            <label class="check"><span><input type="checkbox"> Piel</span><small>14</small></label>
+            <label class="check"><span><input type="checkbox"> Seda</span><small>6</small></label>
+            <label class="check"><span><input type="checkbox"> Cashmere</span><small>4</small></label>
+            <label class="check"><span><input type="checkbox"> Acero y oro</span><small>12</small></label>
+          </div>
+        </details>
+
+        <details class="filter">
+          <summary>Colección</summary>
+          <div class="filter__body">
+            <label class="check"><span><input type="checkbox"> Otoño 2026</span><small>32</small></label>
+            <label class="check"><span><input type="checkbox"> Edición limitada</span><small>9</small></label>
+            <label class="check"><span><input type="checkbox"> Iconos</span><small>6</small></label>
+          </div>
+        </details>
+      </aside>
+
+      <!-- ================= Resultados ================= -->
+      <section aria-label="Productos">
+        <div class="toolbar">
+          <div class="active-filters">
+            <button class="filters-toggle" type="button">
+              <svg width="16" height="16"><use href="#i-grid"/></svg> Filtros
+            </button>
+            <span class="pill"><b>Otoño 2026</b> <button type="button" aria-label="Quitar filtro colección">&times;</button></span>
+            <span class="pill"><b>Envío asegurado</b> <button type="button" aria-label="Quitar filtro envío">&times;</button></span>
+            <a href="catalogo.html">Limpiar todo</a>
+          </div>
+          <span class="toolbar__count">36 piezas</span>
+        </div>
+
+        <div class="grid-3">
+          <a class="product" href="producto.html">
+            <div class="product__media media tone-charcoal">
+              <span class="product__badge">Edición limitada</span>
+              <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#watch"/></svg>
+            </div>
+            <div class="product__info">
+              <div>
+                <div class="product__name">Reloj Héritage Or</div>
+                <div class="product__cat">Relojes · Oro 18k</div>
+              </div>
+              <div class="product__price">4.850 €</div>
+            </div>
+          </a>
+
+          <a class="product" href="producto.html">
+            <div class="product__media media tone-stone">
+              <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#watch"/></svg>
+            </div>
+            <div class="product__info">
+              <div>
+                <div class="product__name">Reloj Nocturne Acero</div>
+                <div class="product__cat">Relojes · Acero</div>
+              </div>
+              <div class="product__price">2.750 €</div>
+            </div>
+          </a>
+
+          <a class="product" href="producto.html">
+            <div class="product__media media tone-clay">
+              <span class="product__badge">Últimas piezas</span>
+              <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#watch"/></svg>
+            </div>
+            <div class="product__info">
+              <div>
+                <div class="product__name">Reloj Skeleton Noir</div>
+                <div class="product__cat">Relojes · Oro ébano</div>
+              </div>
+              <div class="product__price">6.200 €</div>
+            </div>
+          </a>
+
+          <a class="product" href="producto.html">
+            <div class="product__media media tone-stone">
+              <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#coat"/></svg>
+            </div>
+            <div class="product__info">
+              <div>
+                <div class="product__name">Abrigo Cashmere Noir</div>
+                <div class="product__cat">Ropa · Ébano</div>
+              </div>
+              <div class="product__price">349 €</div>
+            </div>
+          </a>
+
+          <a class="product" href="producto.html">
+            <div class="product__media media tone-sand">
+              <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#shirt"/></svg>
+            </div>
+            <div class="product__info">
+              <div>
+                <div class="product__name">Camisa Seda Marfil</div>
+                <div class="product__cat">Ropa · Marfil</div>
+              </div>
+              <div class="product__price">290 €</div>
+            </div>
+          </a>
+
+          <a class="product" href="producto.html">
+            <div class="product__media media tone-sand">
+              <svg class="art" viewBox="0 0 200 140" aria-hidden="true"><use href="#sneaker"/></svg>
+            </div>
+            <div class="product__info">
+              <div>
+                <div class="product__name">Zapatilla Aurelia</div>
+                <div class="product__cat">Calzado · Marfil</div>
+              </div>
+              <div class="product__price">189 €</div>
+            </div>
+          </a>
+
+          <a class="product" href="producto.html">
+            <div class="product__media media tone-clay">
+              <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#boot"/></svg>
+            </div>
+            <div class="product__info">
+              <div>
+                <div class="product__name">Botín Siena</div>
+                <div class="product__cat">Calzado · Coñac</div>
+              </div>
+              <div class="product__price">259 €</div>
+            </div>
+          </a>
+
+          <a class="product" href="producto.html">
+            <div class="product__media media tone-clay">
+              <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#bag"/></svg>
+            </div>
+            <div class="product__info">
+              <div>
+                <div class="product__name">Bolso Piel Oro</div>
+                <div class="product__cat">Accesorios · Oro</div>
+              </div>
+              <div class="product__price">279 €</div>
+            </div>
+          </a>
+
+          <a class="product" href="producto.html">
+            <div class="product__media media tone-stone">
+              <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#bag"/></svg>
+            </div>
+            <div class="product__info">
+              <div>
+                <div class="product__name">Cinturón Piel Noir</div>
+                <div class="product__cat">Accesorios · Ébano</div>
+              </div>
+              <div class="product__price">145 €</div>
+            </div>
+          </a>
+        </div>
+
+        <nav class="pagination" aria-label="Paginación">
+          <a href="#" aria-label="Página anterior">&lsaquo;</a>
+          <span class="is-current" aria-current="page">1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <span class="gap">…</span>
+          <a href="#">6</a>
+          <a href="#" aria-label="Página siguiente">&rsaquo;</a>
+        </nav>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="index.html" aria-label="Luxury Store, inicio">
+            <svg class="logo__mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+            <span class="logo__word"><b>Luxury</b><small>Store</small></span>
+          </a>
+          <p class="footer__tagline">Relojes, ropa, calzado y accesorios de lujo. Diseñado en Madrid, hecho en Europa.</p>
+        </div>
+        <div>
+          <h4>Tienda</h4>
+          <ul class="footer__links">
+            <li><a href="catalogo.html">Calzado</a></li>
+            <li><a href="catalogo.html">Ropa</a></li>
+            <li><a href="catalogo.html">Accesorios</a></li>
+            <li><a href="catalogo.html">Novedades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ayuda</h4>
+          <ul class="footer__links">
+            <li><a href="#">Envíos y devoluciones</a></li>
+            <li><a href="#">Guía de tallas</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <ul class="footer__links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 LUXURY STORE. Todos los derechos reservados.</span>
+        <nav aria-label="Legal">
+          <a href="#">Privacidad</a>
+          <a href="#">Cookies</a>
+          <a href="#">Términos</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

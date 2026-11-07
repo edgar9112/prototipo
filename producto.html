@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reloj Héritage Or — LUXURY STORE</title>
+  <meta name="description" content="Reloj Héritage Or: caja de oro amarillo 18k, cristal de zafiro y movimiento automático suizo. Edición numerada de 250 piezas.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- ================= Símbolos ================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="logo-mark" viewBox="0 0 52 52">
+        <circle cx="26" cy="26" r="24.4" fill="none" stroke="currentColor" stroke-width=".9"/>
+        <circle cx="26" cy="26" r="20.8" fill="none" stroke="currentColor" stroke-width=".45" opacity=".65"/>
+        <path d="M26 1.6v4M26 46.4v4M1.6 26h4M46.4 26h4" stroke="currentColor" stroke-width=".9"/>
+        <text x="26" y="32.2" text-anchor="middle" font-family="Bodoni MT, Didot, Georgia, serif" font-size="17" letter-spacing="1.4" fill="currentColor">LS</text>
+      </symbol>
+      <symbol id="watch" viewBox="0 0 200 200">
+        <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M76 18h48l5 36H71z" fill="currentColor" fill-opacity=".09"/>
+          <path d="M71 146h53l5 36H76z" fill="currentColor" fill-opacity=".09"/>
+          <path d="M79 26h42M77 36h46M74 46h52M77 154h46M74 164h52M79 174h42"/>
+          <circle cx="100" cy="100" r="48" fill="currentColor" fill-opacity=".06"/>
+          <circle cx="100" cy="100" r="38"/>
+          <circle cx="100" cy="100" r="32" opacity=".55"/>
+          <path d="M100 74v26l16 10"/>
+          <path d="M100 62v5M138 100h-5M100 138v-5M62 100h5"/>
+          <path d="M148 93h7v14h-7z"/>
+          <path d="M151 93v14"/>
+        </g>
+      </symbol>
+      <symbol id="sneaker" viewBox="0 0 200 140">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 96c-6 9-3 19 11 19h134c13 0 19-9 15-19l-4-10H24z" fill="currentColor" fill-opacity=".10"/>
+          <path d="M24 86c4-20 18-32 40-33l18-1c14-1 22 4 32 12l35 25c5 4 9 6 15 7l16 2"/>
+          <path d="M64 53l10 14M78 50l10 14M92 49l10 14"/>
+          <path d="M142 55c8 4 15 10 23 18"/>
+          <path d="M30 78c-4-14 2-25 12-31"/>
+        </g>
+      </symbol>
+      <symbol id="boot" viewBox="0 0 200 200">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M68 26h46v78l28 16c8 5 10 14 8 24H46c-8 0-12-8-8-16l16-34V26z" fill="currentColor" fill-opacity=".10"/>
+          <path d="M68 96h46M46 136h104M68 26h46"/>
+          <path d="M84 40v40M98 40v30"/>
+        </g>
+      </symbol>
+      <symbol id="coat" viewBox="0 0 200 200">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M76 34l-26 16-14 58 22 8 6-28v76h72V88l6 28 22-8-14-58-26-16c-8 12-40 12-48 0z" fill="currentColor" fill-opacity=".09"/>
+          <path d="M76 34l24 26 24-26M100 60v104M82 58l-6 22M118 58l6 22"/>
+        </g>
+      </symbol>
+      <symbol id="trouser" viewBox="0 0 200 200">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M62 28h76v18l-4 126h-28l-6-92h-8l-6 92H58L62 46z" fill="currentColor" fill-opacity=".09"/>
+          <path d="M62 46h76M100 46v34"/>
+        </g>
+      </symbol>
+      <symbol id="bag" viewBox="0 0 200 200">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="52" y="72" width="96" height="88" rx="3" fill="currentColor" fill-opacity=".09"/>
+          <path d="M78 72V58a22 22 0 0144 0v14"/>
+          <path d="M52 96h96M64 72l6 24M136 72l-6 24"/>
+        </g>
+      </symbol>
+
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/>
+        </g>
+      </symbol>
+      <symbol id="i-user" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/>
+        </g>
+      </symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 8h12l1 13H5L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/>
+        </g>
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M3 7h18M3 12h18M3 17h18"/>
+        </g>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 12h15"/><path d="M13 6l6 6-6 6"/>
+        </g>
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/>
+      </symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 6h12v10H2z"/><path d="M14 9h4l3 3v4h-7z"/>
+          <circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/>
+        </g>
+      </symbol>
+      <symbol id="i-return" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 8h11a5 5 0 010 10H9"/><path d="M7 4L3 8l4 4"/>
+        </g>
+      </symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 018 0v3"/>
+        </g>
+      </symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M12 20s-7-4.5-7-9a3.8 3.8 0 017-2 3.8 3.8 0 017 2c0 4.5-7 9-7 9z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">Envío asegurado y gratuito &nbsp;·&nbsp; Devoluciones en 30 días</div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="index.html" aria-label="Luxury Store, inicio">
+        <svg class="logo__mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="logo__word"><b>Luxury</b><small>Store</small></span>
+      </a>
+      <nav class="nav__menu" aria-label="Principal">
+        <a href="catalogo.html" aria-current="page">Relojes</a>
+        <a href="catalogo.html">Ropa</a>
+        <a href="catalogo.html">Calzado</a>
+        <a href="catalogo.html">Accesorios</a>
+        <a href="catalogo.html">Maison</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" aria-label="Buscar">
+          <svg width="20" height="20"><use href="#i-search"/></svg>
+        </button>
+        <a class="icon-btn" href="#" aria-label="Mi cuenta">
+          <svg width="20" height="20"><use href="#i-user"/></svg>
+        </a>
+        <a class="icon-btn" href="checkout.html" aria-label="Bolsa de compra, 2 artículos">
+          <svg width="20" height="20"><use href="#i-bag"/></svg>
+          <span class="cart-count">2</span>
+        </a>
+        <button class="icon-btn icon-btn--menu" aria-label="Abrir menú">
+          <svg width="22" height="22"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Migas de pan">
+      <a href="index.html">Inicio</a>
+      <span>/</span>
+      <a href="catalogo.html">Relojes</a>
+      <span>/</span>
+      <span>Reloj Héritage Or</span>
+    </nav>
+
+    <div class="pdp">
+      <!-- ================= Galería ================= -->
+      <section class="gallery" aria-label="Imágenes del producto">
+        <div class="gallery__main media tone-charcoal">
+          <span class="product__badge">Edición limitada</span>
+          <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#watch"/></svg>
+        </div>
+        <div class="gallery__thumbs">
+          <button class="gallery__thumb media tone-charcoal is-active" type="button" aria-label="Vista 1">
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#watch"/></svg>
+          </button>
+          <button class="gallery__thumb media tone-clay" type="button" aria-label="Vista 2">
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#watch"/></svg>
+          </button>
+          <button class="gallery__thumb media tone-stone" type="button" aria-label="Vista 3">
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#watch"/></svg>
+          </button>
+          <button class="gallery__thumb media tone-sand" type="button" aria-label="Vista 4">
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#watch"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- ================= Ficha ================= -->
+      <section class="pdp__info" aria-label="Detalles del producto">
+        <p class="eyebrow">Relojes · Alta relojería</p>
+        <h1>Reloj Héritage Or</h1>
+
+        <div class="pdp__price-row">
+          <span class="pdp__price">4.850 €</span>
+          <span class="pdp__tax">IVA incluido</span>
+        </div>
+
+        <div class="rating">
+          <span class="stars" aria-hidden="true">
+            <svg width="13" height="13"><use href="#i-star"/></svg>
+            <svg width="13" height="13"><use href="#i-star"/></svg>
+            <svg width="13" height="13"><use href="#i-star"/></svg>
+            <svg width="13" height="13"><use href="#i-star"/></svg>
+            <svg width="13" height="13"><use href="#i-star"/></svg>
+          </span>
+          <span>4,9 · 64 valoraciones</span>
+        </div>
+
+        <p class="pdp__desc" style="margin-top:16px">
+          Caja de oro amarillo 18k de 40 mm, cristal de zafiro y movimiento automático suizo.
+          Edición numerada de 250 piezas con certificado de autenticidad.
+        </p>
+
+        <hr class="rule">
+
+        <div class="option-head">
+          <strong>Acabado</strong>
+          <span>Oro amarillo</span>
+        </div>
+        <div class="swatches">
+          <button class="swatch swatch-dot--gold is-active" type="button" aria-label="Oro amarillo" aria-pressed="true"></button>
+          <button class="swatch swatch-dot--steel" type="button" aria-label="Acero" aria-pressed="false"></button>
+          <button class="swatch swatch-dot--black" type="button" aria-label="Oro ébano" aria-pressed="false"></button>
+        </div>
+
+        <div class="option-head">
+          <strong>Diámetro</strong>
+          <a href="#">Guía de medidas</a>
+        </div>
+        <div class="sizes" role="group" aria-label="Diámetro">
+          <button class="size" type="button">36 mm</button>
+          <button class="size" type="button">38 mm</button>
+          <button class="size is-active" type="button" aria-pressed="true">40 mm</button>
+          <button class="size" type="button">42 mm</button>
+          <button class="size" type="button" disabled>44 mm</button>
+          <button class="size" type="button" disabled>46 mm</button>
+        </div>
+
+        <div class="buy-row">
+          <div class="qty">
+            <button type="button" aria-label="Quitar una unidad">&minus;</button>
+            <span aria-live="polite">1</span>
+            <button type="button" aria-label="Añadir una unidad">+</button>
+          </div>
+          <button class="btn btn--dark" type="button">
+            <svg width="18" height="18"><use href="#i-bag"/></svg>
+            Añadir a la bolsa
+          </button>
+          <button class="wish" type="button" aria-label="Guardar en favoritos">
+            <svg width="19" height="19"><use href="#i-heart"/></svg>
+          </button>
+        </div>
+
+        <div class="note">
+          <svg width="20" height="20"><use href="#i-truck"/></svg>
+          <div>
+            <b>Entrega estimada: 12–14 de noviembre.</b><br>
+            Envío asegurado gratuito, estuche y certificado incluidos. Devolución gratuita durante 30 días.
+          </div>
+        </div>
+
+        <div class="accordion">
+          <details open>
+            <summary>Detalles</summary>
+            <div class="accordion__body">
+              <ul>
+                <li>Caja de oro amarillo 18k · 40 mm</li>
+                <li>Movimiento automático suizo</li>
+                <li>Cristal de zafiro antirreflejo</li>
+                <li>Correa de piel cosida a mano</li>
+                <li>Edición numerada de 250 piezas</li>
+                <li>Certificado de autenticidad y garantía de 5 años</li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary>Envío y devoluciones</summary>
+            <div class="accordion__body">
+              Envío asegurado y gratuito en 3–5 días laborables. Entrega con firma y embalaje discreto.
+              Devolución gratuita durante 30 días desde la recepción del pedido.
+            </div>
+          </details>
+          <details>
+            <summary>Guía de tallas</summary>
+            <div class="accordion__body">
+              El diámetro indica el ancho de la caja sin la corona. Si dudas entre dos medidas,
+              elige la mayor para una lectura más cómoda. Consulta la guía completa.
+            </div>
+          </details>
+        </div>
+
+        <div class="payments">
+          <span>VISA</span><span>Mastercard</span><span>Apple Pay</span><span>PayPal</span>
+          <span style="border:0;background:none;padding-left:2px">Pago seguro</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= Recomendados ================= -->
+    <section class="section" style="padding-top:8px">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Completa el look</p>
+          <h2>También te puede gustar</h2>
+        </div>
+        <a class="link-arrow" href="catalogo.html">Ver todo</a>
+      </div>
+
+      <div class="grid-4">
+        <a class="product" href="producto.html">
+          <div class="product__media media tone-stone">
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#coat"/></svg>
+          </div>
+          <div class="product__info">
+            <div>
+              <div class="product__name">Abrigo Cashmere Noir</div>
+              <div class="product__cat">Ropa · Ébano</div>
+            </div>
+            <div class="product__price">349 €</div>
+          </div>
+        </a>
+
+        <a class="product" href="producto.html">
+          <div class="product__media media tone-sage">
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#trouser"/></svg>
+          </div>
+          <div class="product__info">
+            <div>
+              <div class="product__name">Camisa Seda Marfil</div>
+              <div class="product__cat">Ropa · Marfil</div>
+            </div>
+            <div class="product__price">290 €</div>
+          </div>
+        </a>
+
+        <a class="product" href="producto.html">
+          <div class="product__media media tone-clay">
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#bag"/></svg>
+          </div>
+          <div class="product__info">
+            <div>
+              <div class="product__name">Bolso Piel Oro</div>
+              <div class="product__cat">Accesorios · Oro</div>
+            </div>
+            <div class="product__price">279 €</div>
+          </div>
+        </a>
+
+        <a class="product" href="producto.html">
+          <div class="product__media media tone-sand">
+            <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><use href="#boot"/></svg>
+          </div>
+          <div class="product__info">
+            <div>
+              <div class="product__name">Zapatilla Aurelia</div>
+              <div class="product__cat">Calzado · Marfil</div>
+            </div>
+            <div class="product__price">189 €</div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="index.html" aria-label="Luxury Store, inicio">
+            <svg class="logo__mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+            <span class="logo__word"><b>Luxury</b><small>Store</small></span>
+          </a>
+          <p class="footer__tagline">Relojes, ropa, calzado y accesorios de lujo. Diseñado en Madrid, hecho en Europa.</p>
+        </div>
+        <div>
+          <h4>Tienda</h4>
+          <ul class="footer__links">
+            <li><a href="catalogo.html">Calzado</a></li>
+            <li><a href="catalogo.html">Ropa</a></li>
+            <li><a href="catalogo.html">Accesorios</a></li>
+            <li><a href="catalogo.html">Novedades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ayuda</h4>
+          <ul class="footer__links">
+            <li><a href="#">Envíos y devoluciones</a></li>
+            <li><a href="#">Guía de tallas</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <ul class="footer__links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 LUXURY STORE. Todos los derechos reservados.</span>
+        <nav aria-label="Legal">
+          <a href="#">Privacidad</a>
+          <a href="#">Cookies</a>
+          <a href="#">Términos</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
